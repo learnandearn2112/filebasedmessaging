@@ -1,0 +1,24 @@
+
+### get Employees
+GET http://localhost:4004/odata/v4/service/demo/Employees
+
+### get Employees
+GET http://localhost:4004/odata/v4/service/demo/Employees?$expand=department
+
+### get Departments
+GET http://localhost:4004/odata/v4/service/demo/Departments
+
+### get Departments expand employees
+GET http://localhost:4004/odata/v4/service/demo/Departments?$expand=employees
+
+
+### Create Departments
+POST http://localhost:4004/odata/v4/service/demo/Departments
+Content-Type: application/json
+
+{
+    "name" : "Math"
+}
+
+### get Departments in Odata version 2
+GET http://localhost:4004/v2/odata/v4/service/demo/Departments
